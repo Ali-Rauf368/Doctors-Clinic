@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Doc Clinic offers comprehensive medical services including General Medicine, Pediatrics, Cardiology, and Orthopedics. Contact us today for expert healthcare.">
+    <title>Doc Clinic - Your Health, Our Priority</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script defer src="./dist/script.js"></script>
+</head>
+<body>
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#home" class="nav-active">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#appointments">Appointments</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="home">
+        <h1>Welcome to Doc Clinic</h1>
+        <p>Your health is our priority. Providing top-notch medical care with compassion and expertise.</p>
+        <a href="#contact" class="btn">Contact Us</a>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>At Doc Clinic, we are committed to providing high-quality medical services. Our experienced team of doctors and healthcare professionals is dedicated to your well-being.</p>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>General Medicine</h3>
+            <p>Comprehensive care for various medical conditions and general health concerns.</p>
+        </div>
+        <div class="service">
+            <h3>Pediatrics</h3>
+            <p>Specialized care for infants, children, and adolescents.</p>
+        </div>
+        <div class="service">
+            <h3>Cardiology</h3>
+            <p>Expert care for heart-related conditions and cardiovascular health.</p>
+        </div>
+        <div class="service">
+            <h3>Orthopedics</h3>
+            <p>Diagnosis and treatment of musculoskeletal system issues.</p>
+        </div>
+    </section>
+
+    <section id="doctors" class="section">
+        <h2>Meet Our Doctors</h2>
+        <div class="doctor">
+            <img src="https://via.placeholder.com/150" alt="Dr. John Doe - General Medicine Specialist">
+            <h3>Dr. John Doe</h3>
+            <p>Specialist in General Medicine with 15 years of experience.</p>
+        </div>
+        <div class="doctor">
+            <img src="https://via.placeholder.com/150" alt="Dr. Jane Smith - Pediatrician">
+            <h3>Dr. Jane Smith</h3>
+            <p>Pediatrician with expertise in child healthcare and development.</p>
+        </div>
+    </section>
+
+    <section id="appointments" class="section">
+        <h2>Book an Appointment</h2>
+        <form id="appointment-form">
+            <label for="patient-name">Name:</label>
+            <input type="text" id="patient-name" name="patient-name" required>
+            <label for="appointment-date">Date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required>
+            <label for="appointment-time">Time:</label>
+            <input type="time" id="appointment-time" name="appointment-time" required>
+            <label for="doctor">Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="Dr. John Doe">Dr. John Doe</option>
+                <option value="Dr. Jane Smith">Dr. Jane Smith</option>
+            </select>
+            <button type="submit" class="btn">Book Appointment</button>
+            <p id="appointment-response"></p>
+        </form>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>For appointments or inquiries, please reach out to us:</p>
+        <p>Email: contact@docclinic.com</p>
+        <p>Phone: +1-800-555-1234</p>
+        <p>Address: 123 Clinic Street, Your City, 12345</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+            <p id="form-response"></p>
+        </form>
+        <div id="map" class="map"></div>
+    </section>
+
+    <section id="faq" class="section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>What are your operating hours?</h3>
+            <p>We are open from 9 AM to 5 PM, Monday to Friday.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Do you accept walk-in appointments?</h3>
+            <p>Yes, we accept walk-in appointments based on availability.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Doc Clinic</h3>
+            <p>Your health is our priority. Reach out to us on social media or visit our clinic.</p>
+            <ul class="socials">
+                <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Doc Clinic. All Rights Reserved.</p>
+        </div>
+    </footer>
+<script></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>

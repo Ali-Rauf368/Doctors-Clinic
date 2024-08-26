@@ -1,0 +1,172 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav {
+    color: white;
+    background-color: transparent;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+nav.scrolled {
+    background-color: #333;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover, .nav-active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.home {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('image.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.home h1 {
+    animation: slideIn 1s ease-out;
+}
+
+.home p {
+    animation: slideIn 1s ease-out;
+    animation-delay: 0.3s;
+}
+
+.btn {
+    background: linear-gradient(45deg, #007BFF, #00BFFF);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #0056b3, #0093E9);
+    transform: translateY(-5px);
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+.service, .doctor {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.doctor img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    align-self: flex-start;
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.faq-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.faq-item h3 {
+    margin: 0;
+    cursor: pointer;
+}
+
+.footer-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content ul.socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-content ul.socials li {
+    display: inline-block;
+}
+
+.footer-content ul.socials a {
+    color: #333;
+    font-size: 20px;
+}
+
+.footer-bottom {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

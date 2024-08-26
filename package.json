@@ -1,0 +1,14 @@
+{
+    "name": "doc-clinic",
+    "version": "1.0.0",
+    "description": "A professional single-page clinic website.",
+    "main": "index.html",
+    "scripts": {
+      "build": "tsc"
+    },
+    "devDependencies": {
+      "typescript": "^5.0.0"
+    },
+    "dependencies": {}
+  }
+  
